@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:XamarinRocket"
+             Padding="0,60,0,0"
+             x:Class="XamarinRocket.MainPage">
+     <ScrollView>
+        <!--    DICA 1    -->
+        <StackLayout>
+            <Label Text="TailTruncation" FontAttributes="Bold" />
+            <Label Text="{Binding TextoGrande}" LineBreakMode="TailTruncation" />
+             <Label Text="HeadTruncation" FontAttributes="Bold" />
+            <Label Text="{Binding TextoGrande}" LineBreakMode="HeadTruncation" />
+             <Label Text="WordWrap" FontAttributes="Bold" />
+            <Label Text="{Binding TextoGrande}" LineBreakMode="WordWrap" />
+             <Label Text="MiddleTruncation" FontAttributes="Bold" />
+            <Label Text="{Binding TextoGrande}" LineBreakMode="MiddleTruncation" />
+             <Label Text="CharacterWrap" FontAttributes="Bold" />
+            <Label Text="{Binding TextoGrande}" LineBreakMode="CharacterWrap" />
+        </StackLayout>
+        
+      
+        
+     </ScrollView>
+</ContentPage>
