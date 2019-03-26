@@ -4,9 +4,19 @@
              xmlns:local="clr-namespace:XamarinRocket"
              Padding="0,60,0,0"
              x:Class="XamarinRocket.MainPage">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="ColumnSpacing" Value="0" />
+            <Setter Property="RowSpacing" Value="0" />
+        </Style>
+    </ContentPage.Resources>
+    
      <ScrollView>
+        
+
         <!--    DICA 1    -->
-        <StackLayout>
+       <!-- <StackLayout>
             <Label Text="TailTruncation" FontAttributes="Bold" />
             <Label Text="{Binding TextoGrande}" LineBreakMode="TailTruncation" />
              <Label Text="HeadTruncation" FontAttributes="Bold" />
@@ -17,9 +27,28 @@
             <Label Text="{Binding TextoGrande}" LineBreakMode="MiddleTruncation" />
              <Label Text="CharacterWrap" FontAttributes="Bold" />
             <Label Text="{Binding TextoGrande}" LineBreakMode="CharacterWrap" />
-        </StackLayout>
+        </StackLayout>-->
         
-      
+        <!--    DICA 2    -->
         
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Blue" />
+            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Magenta" Grid.Row="0" Grid.Column="2" />
+            <BoxView BackgroundColor="DarkRed" Grid.Row="1" Grid.Column="2" />
+        </Grid>
+  
      </ScrollView>
 </ContentPage>
