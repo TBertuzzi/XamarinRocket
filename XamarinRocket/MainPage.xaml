@@ -66,12 +66,12 @@
                FontSize="50"
                FontAttributes="Bold"/>
 
-     <!--  <ImageButton Source="xamarinRocket.png"
+       <ImageButton Source="xamarinRocket.png"
                     Margin="20,0,20,0"
                     BorderWidth="1"
                     BorderColor="Red"
                     HeightRequest="200"
-                    WidthRequest="200"/>-->  
+                    WidthRequest="200"/>  
             
          <Button Text="Default" BorderWidth="1" BorderColor="Red"  Margin="40,0,40,0" 
                  Image="xamarinRocketMini.png" />
