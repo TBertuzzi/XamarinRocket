@@ -38,7 +38,7 @@
         </StackLayout>-->
         
         <!--    DICA 2    -->
-        
+       <!-- 
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -56,9 +56,39 @@
             
             <BoxView BackgroundColor="Magenta" Grid.Row="0" Grid.Column="2" />
             <BoxView BackgroundColor="DarkRed" Grid.Row="1" Grid.Column="2" />
-        </Grid>
+        </Grid>-->
         
         
+         <!--    DICA 4    -->
+        
+        <StackLayout Padding="0,30,0,0">
+        <Label Text="Image Button"
+               FontSize="50"
+               FontAttributes="Bold"/>
+
+     <!--  <ImageButton Source="xamarinRocket.png"
+                    Margin="20,0,20,0"
+                    BorderWidth="1"
+                    BorderColor="Red"
+                    HeightRequest="200"
+                    WidthRequest="200"/>-->  
+            
+         <Button Text="Default" BorderWidth="1" BorderColor="Red"  Margin="40,0,40,0" 
+                 Image="xamarinRocketMini.png" />
+
+        <Button Text="Left - 10"  BorderWidth="1" BorderColor="Red"  Margin="40,0,40,0"
+                ContentLayout="Left, 10"  Image="xamarinRocketMini.png"/>
+
+        <Button Text="Top - 10" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
+                ContentLayout="Top, 10" Image="xamarinRocketMini.png"/>
+
+        <Button Text="Right - 20" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
+                ContentLayout="Right, 20" Image="xamarinRocketMini.png"/>
+
+        <Button Text="Bottom - 20" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
+                ContentLayout="Bottom, 20" Image="xamarinRocketMini.png"/>
+            
+        </StackLayout>
   
      </ScrollView>
 </ContentPage>

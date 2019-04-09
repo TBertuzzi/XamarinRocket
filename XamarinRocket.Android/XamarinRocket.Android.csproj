@@ -84,6 +84,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarinRocket.png" />
+    <AndroidResource Include="Resources\drawable\xamarinRocketMini.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -92,6 +94,7 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Renderer\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinRocket\XamarinRocket.csproj">

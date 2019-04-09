@@ -157,4 +157,11 @@
       <Name>XamarinRocket</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Renderer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xamarinRocket.png" />
+    <BundleResource Include="Resources\xamarinRocketMini.png" />
+  </ItemGroup>
 </Project>
