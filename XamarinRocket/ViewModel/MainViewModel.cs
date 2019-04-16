@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+using Xamarin.Essentials;
 
 namespace XamarinRocket.ViewModel
 {
@@ -45,14 +45,32 @@ namespace XamarinRocket.ViewModel
         }
 
 
-        public MainViewModel()
+
+        private bool _isNotConnected;
+        public bool IsNotConnected
         {
-           
-
-
+            get => _isNotConnected;
+            set => SetProperty(ref _isNotConnected, value);
         }
 
 
+        public MainViewModel()
+        {
+
+            //Connectivity.ConnectivityChanged += Connectivity_ConnectivityChanged;
+            //IsNotConnected = Connectivity.NetworkAccess != NetworkAccess.Internet;
+
+        }
+
+        //~MainViewModel()
+        //{
+        //    Connectivity.ConnectivityChanged -= Connectivity_ConnectivityChanged;
+        //}
+
+        //void Connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        //{
+        //    IsNotConnected = e.NetworkAccess != NetworkAccess.Internet;
+        //}
     }
 
 }

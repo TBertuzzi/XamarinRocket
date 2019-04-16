@@ -61,7 +61,7 @@
         
          <!--    DICA 4    -->
         
-        <StackLayout Padding="0,30,0,0">
+      <!--  <StackLayout Padding="0,30,0,0">
         <Label Text="Image Button"
                FontSize="50"
                FontAttributes="Bold"/>
@@ -87,6 +87,18 @@
 
         <Button Text="Bottom - 20" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
                 ContentLayout="Bottom, 20" Image="xamarinRocketMini.png"/>
+            
+        </StackLayout>-->
+        
+         <!--    DICA 5    -->
+        
+       <StackLayout Padding="0,30,0,0">
+            
+       <Label TextColor="Red"
+              IsVisible="{Binding IsNotConnected}"
+               FontSize="50"
+              Text="Conexão perdida"
+              FontAttributes="Bold"/>
             
         </StackLayout>
   

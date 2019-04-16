@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,22 +12,18 @@ namespace XamarinRocket
         {
             InitializeComponent();
 
+             Connectivity.ConnectivityChanged += ConnectivityChanged;
+
             MainPage = new MainPage();
         }
 
-        protected override void OnStart()
+        private void ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            if (e.NetworkAccess != NetworkAccess.Internet)
+            {
+                Application.Current.MainPage.DisplayAlert("Atenção", "Estamos sem internet :(", "OK");
+            }
+            
         }
     }
 }
