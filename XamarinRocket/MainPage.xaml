@@ -2,11 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:XamarinRocket"
+             Title="Xamarin Rocket"
              x:Class="XamarinRocket.MainPage">
     
      <ScrollView>
         
         <StackLayout> 
+        
+              <Image Source="xamarinRocket.png"
+                    Margin="20,0,20,0"
+                    HeightRequest="200"
+                    WidthRequest="200"/>  
+            
         <Button Text="Rocket 1 : LineBreak Mode" Clicked="Rocket1_Clicked"> </Button>
         <Button Text="Rocket 2 : Espaço no Grid" Clicked="Rocket2_Clicked"> </Button>
         <Button Text="Rocket 3 : Tela Cheia" Clicked="Rocket3_Clicked"> </Button>
