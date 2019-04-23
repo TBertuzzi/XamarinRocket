@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XamarinRocket.Views.XamarinRocket2Page">
+    
+     <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="ColumnSpacing" Value="0" />
+            <Setter Property="RowSpacing" Value="0" />
+        </Style>
+    </ContentPage.Resources>
+    
+    
+     <!--    DICA 2    -->
+   
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Blue" />
+            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Magenta" Grid.Row="0" Grid.Column="2" />
+            <BoxView BackgroundColor="DarkRed" Grid.Row="1" Grid.Column="2" />
+        </Grid>
+</ContentPage>

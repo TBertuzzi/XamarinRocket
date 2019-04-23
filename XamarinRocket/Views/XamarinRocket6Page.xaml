@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinRocket.Views.XamarinRocket6Page">
+    
+      <!--    DICA 6    -->
+         <!--<Grid VerticalOptions="CenterAndExpand">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            
+            <BoxView BackgroundColor="Blue" Grid.Row="0" />
+            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Magenta" Grid.Row="2" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkRed" Grid.Row="2" Grid.Column="1" />
+        </Grid>-->
+        
+         <!--<Grid  VerticalOptions="CenterAndExpand">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="6*" />
+            </Grid.ColumnDefinitions>
+            
+            <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
+             <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="1" />
+        </Grid>-->
+  
+       <!-- <Grid RowSpacing="20" ColumnSpacing="20" VerticalOptions="CenterAndExpand">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            
+            <BoxView BackgroundColor="Blue" Grid.Row="0" />
+            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
+            
+            <BoxView BackgroundColor="Magenta" Grid.Row="2" Grid.Column="0" />
+            <BoxView BackgroundColor="DarkRed" Grid.Row="2" Grid.Column="1" />
+        </Grid>-->
+        
+  <Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+        <BoxView BackgroundColor="Black" Grid.ColumnSpan="2" 
+                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            
+        <BoxView BackgroundColor="Blue" Grid.Column="1" 
+                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            
+        <Frame BackgroundColor="White" WidthRequest="80" HeightRequest="80" Grid.ColumnSpan="2" 
+               HorizontalOptions="Center" VerticalOptions="Center">
+                
+            <Label LineBreakMode="WordWrap" Text="No meio do Grid" 
+                    HorizontalTextAlignment="Center" VerticalOptions="Center" />
+        </Frame>
+    </Grid>
+</ContentPage>

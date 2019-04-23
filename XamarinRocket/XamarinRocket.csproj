@@ -18,5 +18,21 @@
     <Folder Include="ViewModel\" />
     <Folder Include="Helpers\" />
     <Folder Include="Control\" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModel\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\XamarinRocket2Page.xaml.cs">
+      <DependentUpon>XamarinRocket2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\XamarinRocket3Page.xaml.cs">
+      <DependentUpon>XamarinRocket3Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\XamarinRocket4Page.xaml.cs">
+      <DependentUpon>XamarinRocket4Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\XamarinRocket6.xaml.cs">
+      <DependentUpon>XamarinRocket6Page.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

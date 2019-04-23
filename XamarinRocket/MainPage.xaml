@@ -1,186 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:XamarinRocket"
-             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             x:Class="XamarinRocket.MainPage">-->
-             
-     <!--    DICA e    -->
-      <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:local="clr-namespace:XamarinRocket"
-             xmlns:iOS="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             iOS:Page.PrefersStatusBarHidden="True"
              x:Class="XamarinRocket.MainPage">
-    
-    <ContentPage.Resources>
-        <Style TargetType="Grid">
-            <Setter Property="ColumnSpacing" Value="0" />
-            <Setter Property="RowSpacing" Value="0" />
-        </Style>
-    </ContentPage.Resources>
     
      <ScrollView>
         
-
-        <!--    DICA 1    -->
-       <!-- <StackLayout>
-            <Label Text="TailTruncation" FontAttributes="Bold" />
-            <Label Text="{Binding TextoGrande}" LineBreakMode="TailTruncation" />
-             <Label Text="HeadTruncation" FontAttributes="Bold" />
-            <Label Text="{Binding TextoGrande}" LineBreakMode="HeadTruncation" />
-             <Label Text="WordWrap" FontAttributes="Bold" />
-            <Label Text="{Binding TextoGrande}" LineBreakMode="WordWrap" />
-             <Label Text="MiddleTruncation" FontAttributes="Bold" />
-            <Label Text="{Binding TextoGrande}" LineBreakMode="MiddleTruncation" />
-             <Label Text="CharacterWrap" FontAttributes="Bold" />
-            <Label Text="{Binding TextoGrande}" LineBreakMode="CharacterWrap" />
-        </StackLayout>-->
-        
-        <!--    DICA 2    -->
-       <!-- 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <BoxView BackgroundColor="Blue" />
-            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
-            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
+        <StackLayout> 
+        <Button Text="Rocket 1 : LineBreak Mode" Clicked="Rocket1_Clicked"> </Button>
+        <Button Text="Rocket 2 : Espaço no Grid" Clicked="Rocket2_Clicked"> </Button>
+        <Button Text="Rocket 3 : Tela Cheia" Clicked="Rocket3_Clicked"> </Button>
+        <Button Text="Rocket 4 : Imagens em botões" Clicked="Rocket4_Clicked"> </Button>
+        <Button Text="Rocket 5 : Alterou Conexão" Clicked="Rocket5_Clicked"> </Button>
+        <Button Text="Rocket 6 : Grid" Clicked="Rocket6_Clicked"> </Button>
             
-            <BoxView BackgroundColor="Magenta" Grid.Row="0" Grid.Column="2" />
-            <BoxView BackgroundColor="DarkRed" Grid.Row="1" Grid.Column="2" />
-        </Grid>-->
-        
-        
-         <!--    DICA 4    -->
-        
-      <!--  <StackLayout Padding="0,30,0,0">
-        <Label Text="Image Button"
-               FontSize="50"
-               FontAttributes="Bold"/>
-
-       <ImageButton Source="xamarinRocket.png"
-                    Margin="20,0,20,0"
-                    BorderWidth="1"
-                    BorderColor="Red"
-                    HeightRequest="200"
-                    WidthRequest="200"/>  
-            
-         <Button Text="Default" BorderWidth="1" BorderColor="Red"  Margin="40,0,40,0" 
-                 Image="xamarinRocketMini.png" />
-
-        <Button Text="Left - 10"  BorderWidth="1" BorderColor="Red"  Margin="40,0,40,0"
-                ContentLayout="Left, 10"  Image="xamarinRocketMini.png"/>
-
-        <Button Text="Top - 10" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
-                ContentLayout="Top, 10" Image="xamarinRocketMini.png"/>
-
-        <Button Text="Right - 20" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
-                ContentLayout="Right, 20" Image="xamarinRocketMini.png"/>
-
-        <Button Text="Bottom - 20" BorderWidth="1" BorderColor="Red" Margin="40,0,40,0"
-                ContentLayout="Bottom, 20" Image="xamarinRocketMini.png"/>
-            
-        </StackLayout>-->
-        
-         <!--    DICA 5    -->
-        
-       <!--<StackLayout Padding="0,30,0,0">
-            
-       <Label TextColor="Red"
-              IsVisible="{Binding IsNotConnected}"
-               FontSize="50"
-              Text="Conexão perdida"
-              FontAttributes="Bold"/>
-            
-        </StackLayout>-->
-        
-        <!--    DICA 6    -->
-         <!--<Grid VerticalOptions="CenterAndExpand">
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="120" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="6*" />
-                <ColumnDefinition Width="4*" />
-            </Grid.ColumnDefinitions>
-            
-            <BoxView BackgroundColor="Blue" Grid.Row="0" />
-            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
-            
-            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
-            
-            <BoxView BackgroundColor="Magenta" Grid.Row="2" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkRed" Grid.Row="2" Grid.Column="1" />
-        </Grid>-->
-        
-         <!--<Grid  VerticalOptions="CenterAndExpand">
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="120" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*" />
-                <ColumnDefinition Width="6*" />
-            </Grid.ColumnDefinitions>
-            
-            <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
-             <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="1" />
-        </Grid>-->
-  
-       <!-- <Grid RowSpacing="20" ColumnSpacing="20" VerticalOptions="CenterAndExpand">
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="120" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="6*" />
-                <ColumnDefinition Width="4*" />
-            </Grid.ColumnDefinitions>
-            
-            <BoxView BackgroundColor="Blue" Grid.Row="0" />
-            <BoxView BackgroundColor="DarkOrchid" Grid.Row="0" Grid.Column="1" />
-            
-            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkSeaGreen" Grid.Row="1" Grid.Column="1" />
-            
-            <BoxView BackgroundColor="Magenta" Grid.Row="2" Grid.Column="0" />
-            <BoxView BackgroundColor="DarkRed" Grid.Row="2" Grid.Column="1" />
-        </Grid>-->
-        
-  <Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
-        <BoxView BackgroundColor="Black" Grid.ColumnSpan="2" 
-                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-            
-        <BoxView BackgroundColor="Blue" Grid.Column="1" 
-                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-            
-        <Frame BackgroundColor="White" WidthRequest="80" HeightRequest="80" Grid.ColumnSpan="2" 
-               HorizontalOptions="Center" VerticalOptions="Center">
-                
-            <Label LineBreakMode="WordWrap" Text="No meio do Grid" 
-                    HorizontalTextAlignment="Center" VerticalOptions="Center" />
-        </Frame>
-    </Grid>
+      </StackLayout>
         
      </ScrollView>
 </ContentPage>

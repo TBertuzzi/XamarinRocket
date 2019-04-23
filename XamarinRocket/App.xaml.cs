@@ -14,7 +14,7 @@ namespace XamarinRocket
 
              Connectivity.ConnectivityChanged += ConnectivityChanged;
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new MainPage());
         }
 
         private void ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
