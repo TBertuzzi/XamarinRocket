@@ -124,6 +124,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\xamarinRocket.png" />
     <BundleResource Include="Resources\xamarinRocketMini.png" />
+    <BundleResource Include="Resources\gestures.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />

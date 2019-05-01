@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinRocket.Views.Gestos.SwipeGesturePage" xmlns:local="clr-namespace:XamarinRocket.Control.Gestos">
+    <StackLayout Margin="20">
+        <Label Text="Passe o dedo em qualquer direção no box." />
+        <local:SwipeContainer Swipe="OnSwiped" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <BoxView Color="Teal" WidthRequest="300" HeightRequest="300" /> 
+        </local:SwipeContainer>
+        <Label x:Name="_label" Text="Voce moveu para: "/>
+    </StackLayout>
+</ContentPage>

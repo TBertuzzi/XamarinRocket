@@ -7,19 +7,20 @@
     
      <ScrollView>
         
-        <StackLayout> 
+        <StackLayout Padding="20"> 
         
               <Image Source="xamarinRocket.png"
                     Margin="20,0,20,0"
                     HeightRequest="200"
                     WidthRequest="200"/>  
             
-        <Button Text="Rocket 1 : LineBreak Mode" Clicked="Rocket1_Clicked"> </Button>
-        <Button Text="Rocket 2 : Espaço no Grid" Clicked="Rocket2_Clicked"> </Button>
-        <Button Text="Rocket 3 : Tela Cheia" Clicked="Rocket3_Clicked"> </Button>
-        <Button Text="Rocket 4 : Imagens em botões" Clicked="Rocket4_Clicked"> </Button>
-        <Button Text="Rocket 5 : Alterou Conexão" Clicked="Rocket5_Clicked"> </Button>
-        <Button Text="Rocket 6 : Grid" Clicked="Rocket6_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red"  Text="Rocket 1 : LineBreak Mode" Clicked="Rocket1_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 2 : Espaço no Grid" Clicked="Rocket2_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 3 : Tela Cheia" Clicked="Rocket3_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 4 : Imagens em botões" Clicked="Rocket4_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 5 : Alterou Conexão" Clicked="Rocket5_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 6 : Grid" Clicked="Rocket6_Clicked"> </Button>
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 7 : Gestos" Clicked="Rocket7_Clicked"> </Button>
             
       </StackLayout>
         

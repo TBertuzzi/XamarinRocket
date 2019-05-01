@@ -21,5 +21,12 @@ namespace XamarinRocket.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
+
+        public override void OnBackPressed()
+        {
+
+            base.OnBackPressed();
+
+        }
     }
 }

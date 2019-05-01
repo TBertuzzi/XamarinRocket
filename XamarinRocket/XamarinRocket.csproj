@@ -20,6 +20,8 @@
     <Folder Include="Control\" />
     <Folder Include="Views\" />
     <Folder Include="ViewModel\Base\" />
+    <Folder Include="Views\Gestos\" />
+    <Folder Include="Control\Gestos\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\XamarinRocket2Page.xaml.cs">
@@ -33,6 +35,9 @@
     </Compile>
     <Compile Update="Views\XamarinRocket6.xaml.cs">
       <DependentUpon>XamarinRocket6Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\XamarinRocket7Page.xaml.cs">
+      <DependentUpon>XamarinRocket7Page.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinRocket.Views.Gestos.TapGesturePage">
+   <ContentPage.Content>
+        <StackLayout Padding="20">
+          
+         <Image HeightRequest="350" WidthRequest="350" Source="xamarinRocket.png" >
+              <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Tapped" ></TapGestureRecognizer>
+              </Image.GestureRecognizers>
+         </Image>
+         
+            <Label x:Name="lblTapedCount" Text="Você tocou:"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
