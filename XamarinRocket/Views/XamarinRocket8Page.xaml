@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinRocket.Views.XamarinRocket8Page" xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+    
+   <Grid >
+    <Grid.RowDefinitions>
+        <RowDefinition Height="6*" />
+        <RowDefinition Height="10*" />
+    </Grid.RowDefinitions>
+
+         <skia:SKCanvasView x:Name="canvas" 
+                            PaintSurface="OnCanvasViewPaintSurfaceAsync" 
+                            Grid.Row="0" 
+                            BackgroundColor="#ecf0f1"/>
+
+        
+         <StackLayout Orientation="Vertical" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White"  >
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="White" Padding="0,5,10,5">
+                 <Label Text="  Hoje"/>
+                 <Switch x:Name="sw_listToggle" IsToggled="{Binding Path=Monitored, Mode=TwoWay}" 
+                    Toggled="SwitchToggledAsync" />
+                <Label Text="Mês"/>
+            </StackLayout>
+            
+            <Slider x:Name="sweepAngleSlider"
+                   ValueChanged="SliderValueChanged"
+                   Minimum="0" Maximum="260"
+                   IsVisible="true"/>
+       </StackLayout>
+        </Grid>
+</ContentPage>

@@ -57,7 +57,10 @@ namespace XamarinRocket
             await Application.Current.MainPage.Navigation.PushAsync(new XamarinRocket7Page());
         }
 
-
+        public async void Rocket8_Clicked(object sender, EventArgs e)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new XamarinRocket8Page());
+        }
 
 
     }
