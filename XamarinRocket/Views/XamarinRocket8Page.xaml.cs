@@ -182,7 +182,9 @@ namespace XamarinRocket.Views
                     skPaint.TextSize = progressHelpers.GetFactoredHeight(lineSize3);
 
                     if (sw_listToggle.IsToggled)
+                    {
                         canvas.DrawText("Meta " + meta + " Min", Xc, Yc + progressHelpers.GetFactoredHeight(lineHeight3), skPaint);
+                    }
                     else
                     {
                         canvas.DrawText("Meta " + meta / 30 + " Min", Xc, Yc + progressHelpers.GetFactoredHeight(lineHeight3), skPaint);
