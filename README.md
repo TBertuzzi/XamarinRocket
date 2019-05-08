@@ -1,4 +1,7 @@
 # XamarinRocket
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/34a596705c394ebbbaa207b5b85a50d6)](https://app.codacy.com/app/TBertuzzi/XamarinRocket?utm_source=github.com&utm_medium=referral&utm_content=TBertuzzi/XamarinRocket&utm_campaign=Badge_Grade_Dashboard)
+
 Xamarin Rocket :rocket: - Dicas Rapidas de Xamarin : 
 
 |Artigo | Descrição|
