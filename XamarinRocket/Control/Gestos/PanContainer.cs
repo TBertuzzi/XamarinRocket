@@ -28,6 +28,7 @@ namespace XamarinRocket.Control.Gestos
                     x = Content.TranslationX;
                     y = Content.TranslationY;
                     break;
+                default: break;
             }
         }
     }

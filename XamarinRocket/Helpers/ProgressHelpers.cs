@@ -5,12 +5,12 @@ namespace XamarinRocket
     public class ProgressHelpers
     {
         // Reference Values(Standard Pixel 1 Device)
-        private const float refHeight = 1080;//1677;
-        private const float refWidth = 632;//940;
+        private const float refHeight = 1080;
+        private const float refWidth = 632;
 
         // Derived Proportinate Values
-        private float deviceHeight = 1; // Initializing to 1
-        private float deviceWidth = 1;  // Initializing to 1
+        private float deviceHeight = 1; 
+        private float deviceWidth = 1;  
 
 
         public ProgressHelpers() { }
@@ -36,13 +36,13 @@ namespace XamarinRocket
 
         public float GetFactoredHeight(int value)
         {
-            return (float)((value / refHeight) * deviceHeight);
+            return ((value / refHeight) * deviceHeight);
         }
 
 
         public float GetFactoredWidth(int value)
         {
-            return (float)((value / refWidth) * deviceWidth);
+            return ((value / refWidth) * deviceWidth);
         }
 
         public int GetSweepAngle(int goal, int achieved)

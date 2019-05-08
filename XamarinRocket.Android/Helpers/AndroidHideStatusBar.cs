@@ -15,7 +15,7 @@ namespace XamarinRocket.Droid.Helpers
 
         public void HideStatusBar(bool hide)
         {
-            var activity = (Activity)MainApplication.ActivityContext; ;
+            var activity = (Activity)MainApplication.ActivityContext;
             var attrs = activity.Window.Attributes;
 
             if (hide)

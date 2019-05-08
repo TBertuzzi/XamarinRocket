@@ -12,9 +12,9 @@ namespace XamarinRocket.Views
     {
         SKPaintSurfaceEventArgs args;
         ProgressHelpers progressHelpers = new ProgressHelpers();
-        int exercicioDiario = 20;
-        int exercicioMensal = 340;
-        int meta = 900;
+        readonly int exercicioDiario = 20;
+        readonly int exercicioMensal = 340;
+        readonly int meta = 900;
 
         public XamarinRocket8Page()
         {
@@ -64,9 +64,13 @@ namespace XamarinRocket.Views
         async Task InitiateProgressUpdate()
         {
             if (sw_listToggle.IsToggled)
+            {
                 await AnimateProgress(progressHelpers.GetSweepAngle(meta, exercicioMensal));
+            }
             else
+            {
                 await AnimateProgress(progressHelpers.GetSweepAngle(meta / 30, exercicioDiario));
+            }
         }
 
         public void DrawGaugeAsync()
@@ -148,11 +152,15 @@ namespace XamarinRocket.Views
                                         SKFontStyleWeight.Bold,
                                         SKFontStyleWidth.Normal,
                                         SKFontStyleSlant.Upright);
-                                       
+
                     if (sw_listToggle.IsToggled)
+                    {
                         canvas.DrawText(exercicioMensal + "", Xc, Yc + progressHelpers.GetFactoredHeight(lineHeight1), skPaint);
+                    }
                     else
+                    {
                         canvas.DrawText(exercicioDiario + "", Xc, Yc + progressHelpers.GetFactoredHeight(lineHeight1), skPaint);
+                    }
                 }
 
                 using (SKPaint skPaint = new SKPaint())

@@ -8,8 +8,11 @@ namespace XamarinRocket
 {
     public partial class App : Application
     {
-        public static double ScreenWidth;
-        public static double ScreenHeight;
+        private static double screenWidth;
+        private static double screenHeight;
+
+        public static double ScreenHeight { get => screenHeight; set => screenHeight = value; }
+        public static double ScreenWidth { get => screenWidth; set => screenWidth = value; }
 
         public App()
         {
@@ -20,6 +23,7 @@ namespace XamarinRocket
             MainPage = new NavigationPage( new MainPage());
         }
 
+      
         private void ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             if (e.NetworkAccess != NetworkAccess.Internet)
