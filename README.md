@@ -13,5 +13,5 @@ Xamarin Rocket :rocket: - Dicas Rapidas de Xamarin :
 |[Xamarin Rocket #5 — Notificação ao alterar a conexão](https://medium.com/@bertuzzi/xamarin-rocket-5-notifica%C3%A7%C3%A3o-ao-alterar-a-conex%C3%A3o-5495c5f57a4d)|Evento para notificar alteração na conexão|
 |[Xamarin Rocket #6 — Como utilizar o GridLayout](https://medium.com/@bertuzzi/xamarin-rocket-6-como-utilizar-o-gridlayout-45e0ab4b525b)|Dicas e truques de como utilizar o GridLayout|
 |[Xamarin Rocket #7 — Gestos](https://medium.com/@bertuzzi/xamarin-rocket-7-gestos-e650bbad6b60)|Utilizando gestos com Xamarin.Forms|
-
+|[Xamarin Rocket #8 — Indicador de Progresso](https://medium.com/@bertuzzi/xamarin-rocket-8-indicador-de-progresso-fe512e8812da)|Como criar um Indicador de Progresso com Xamarin.Forms|
 
