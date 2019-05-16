@@ -23,6 +23,7 @@
     <Folder Include="ViewModel\Base\" />
     <Folder Include="Views\Gestos\" />
     <Folder Include="Control\Gestos\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\XamarinRocket2Page.xaml.cs">

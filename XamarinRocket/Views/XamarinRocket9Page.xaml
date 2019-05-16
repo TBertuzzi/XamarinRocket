@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             Padding="0,20,0,0"
+             x:Class="XamarinRocket.Views.XamarinRocket9Page">
+    
+  <StackLayout>
+        <Label x:Name="lblTexto" IsVisible="false" FontAttributes="Bold" FontSize="Large" Text="O Label que aparece e Some" ></Label>
+    <ListView x:Name="lvwUsers" 
+            HasUnevenRows="true"
+            SeparatorVisibility="Default" 
+             ItemDisappearing="ListView_OnItemDisappearing"
+            ItemsSource="{Binding Users}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                  <ViewCell >
+                    
+                    <StackLayout Orientation="Vertical" Padding="20,0,20,0">
+                        <Label Text="{Binding Name}" FontSize="17" ></Label>
+                    </StackLayout>
+
+ 
+                  </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+  </StackLayout>
+</ContentPage>
