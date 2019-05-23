@@ -15,4 +15,4 @@ Xamarin Rocket :rocket: - Dicas Rapidas de Xamarin :
 |[Xamarin Rocket #7 — Gestos](https://medium.com/@bertuzzi/xamarin-rocket-7-gestos-e650bbad6b60)|Utilizando gestos com Xamarin.Forms|
 |[Xamarin Rocket #8 — Indicador de Progresso](https://medium.com/@bertuzzi/xamarin-rocket-8-indicador-de-progresso-fe512e8812da)|Como criar um Indicador de Progresso com Xamarin.Forms|
 |[Xamarin Rocket #9 — ListView: Detectando alteração dos itens e Removendo a célula Selecionada](https://medium.com/@bertuzzi/xamarin-rocket-9-listview-detectando-altera%C3%A7%C3%A3o-dos-itens-e-removendo-a-celula-selecionada-4d1a25ebf414)|Como criar um Indicador de Progresso com Xamarin.Forms|
-
+|[Xamarin Rocket #10 — Um Relógio, Xaml e BindingContext](https://medium.com/@bertuzzi/xamarin-rocket-10-um-rel%C3%B3gio-xaml-e-bindingcontext-261e135e932d)|Criando um relogio e um pouco de binding context|
