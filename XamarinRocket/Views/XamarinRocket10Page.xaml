@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinRocket.Views.XamarinRocket10Page" 
+             xmlns:local="clr-namespace:XamarinRocket.ViewModel">
+    <ContentPage.Content>
+      <StackLayout>
+          <Label Text="{Binding DateTime, StringFormat='{0:T}'}"
+           FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+                <Label.BindingContext>
+                    <local:XamarinRocket10ViewModel />
+                </Label.BindingContext>
+            </Label>
+            
+           <Label Text="Label Torto!"
+               Rotation="-15"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Blue" />
+            
+            
+       <Label Text="Rodando com Slider"
+               BindingContext="{x:Reference Name=slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Slider x:Name="slider"
+                Maximum="360"
+                VerticalOptions="CenterAndExpand"
+                Margin="20,0,20,0" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

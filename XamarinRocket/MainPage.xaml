@@ -23,7 +23,7 @@
         <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 7 : Gestos" Clicked="Rocket7_Clicked"/> 
         <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 8 : Indicador de Progresso" Clicked="Rocket8_Clicked"/> 
         <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 9 : Scroll e Selecionar" Clicked="Rocket9_Clicked"/> 
-            
+        <Button BorderWidth="1" FontAttributes="Bold" BorderColor="Red" Text="Rocket 10 : Um Relógio, Xaml e BindingContext" Clicked="Rocket10_Clicked"/>     
       </StackLayout>
         
      </ScrollView>
